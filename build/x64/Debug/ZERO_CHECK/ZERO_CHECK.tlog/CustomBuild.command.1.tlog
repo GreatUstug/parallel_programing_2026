@@ -1,0 +1,10 @@
+^C:\USERS\MAXIM\DESKTOP\PARALLEL\BUILD\CMAKEFILES\0567C48E12597C8E18BFDB32405AD8A1\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/maxim/Desktop/parallel -BC:/Users/maxim/Desktop/parallel/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/maxim/Desktop/parallel/build/parallel.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
