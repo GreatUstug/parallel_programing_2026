@@ -3,4 +3,7 @@ project(parallel)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(parallel lab1.cpp)
+add_executable(parallel 
+    # lab1.cpp
+    lab2.cpp
+)
